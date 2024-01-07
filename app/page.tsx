@@ -1,7 +1,11 @@
-import Chec from "@/components/Chec";
+"use client"
+
 import Left from "@/components/Left/page";
 import Navbar from "@/components/Navbar";
 import Right from "@/components/Right/page";
+import SectionIntroduction from "@/components/SectionIntroduction";
+import FadeInOnScroll from "@/components/others/FadeIn";
+import { Content } from "next/font/google";
 
 export default function Home() {
   return (
@@ -10,9 +14,10 @@ export default function Home() {
       <Left />
       <Right />
       <div id="content">
-        <main>
-
+        <main className="fill-height ">
+          <SectionIntroduction />
         </main>
+        <FadeInOnScroll />
       </div>
     </>
   )

@@ -28,6 +28,14 @@ $background-color_1: var(--navy);
   --fz-heading: 32px;
   --border-radius: 4px;
 
+  body {
+    color: var(--slate);
+  }
+
+  .green {
+    color: var(--green);
+  }
+
   a {
     display: inline-block;
     text-decoration: none;
@@ -35,9 +43,28 @@ $background-color_1: var(--navy);
     color: inherit;
     position: relative;
   }
+
+  .scale-trans {
+
+    .button {
+      color: var(--green);
+      background-color: transparent;
+      border: 1px solid var(--green);
+      border-radius: var(--border-radius);
+      padding: 0.75rem 1rem;
+      line-height: 1;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: var(--fz-xs);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--green) 3px 3px 0px;
+      }
+    }
+  }
 }
-
-
 
 .nav-header {
   position: fixed;
@@ -87,11 +114,9 @@ $background-color_1: var(--navy);
             color: var(--green);
           }
         }
-
       }
     }
   }
-
 }
 
 .nav-items {
@@ -159,7 +184,6 @@ $background-color_1: var(--navy);
 }
 
 
-
 .right {
   width: 40px;
   position: fixed;
@@ -182,7 +206,7 @@ $background-color_1: var(--navy);
       letter-spacing: 0.1em;
       -webkit-writing-mode: vertical-rl;
       writing-mode: vertical-rl;
-      
+
       &:hover {
         color: var(--green);
         transform: translateY(-5px);
@@ -198,4 +222,76 @@ $background-color_1: var(--navy);
       background-color: var(--light-slate);
     }
   }
+}
+
+
+.fill-height {
+  padding: 0px 150px;
+}
+
+
+main {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 200px 150px;
+
+
+  .hero-section {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0px;
+
+    h1 {
+      margin: 0px 0px 30px 4px;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+      font-weight: 400;
+    }
+
+
+    .big-heading {
+
+      color: var(--lightest-slate);
+      line-height: 1.1;
+
+      h2 {
+        margin: 0px;
+        font-size: clamp(40px, 8vw, 80px);
+        margin: 0px px 0px 10px;
+        font-weight: 600;
+      }
+
+      h3 {
+        margin-top: 5px;
+        color: var(--slate);
+        line-height: 0.9;
+        font-weight: 600;
+      }
+    }
+
+    .description {
+      p {
+        margin: 20px 0px 0px;
+        max-width: 540px;
+      }
+    }
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-active {
+  opacity: 1;
 }

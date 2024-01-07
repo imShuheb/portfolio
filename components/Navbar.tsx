@@ -43,6 +43,10 @@ const Navbar: React.FC = () => {
                                 <Link href={'#about'}>Contact</Link>
                             </li>
                         </ol>
+
+                        <div className="scale-trans">
+                            <Link href={'/'} className='button'>Resume </Link>
+                        </div>
                     </div>
                 </div>
             </nav>
