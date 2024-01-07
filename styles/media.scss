@@ -2,6 +2,43 @@
 @media (max-width: 590px) {}
 
 
+@media (max-width: 768px) {
+    .nav-header {
+        padding: 0px 25px;
+
+        .mobile-menu {
+            display: flex;
+        }
+    }
+
+    .navbar {
+        justify-content: center !important;
+
+        .list {
+            ol {
+                li {
+                    flex-direction: column;
+                    padding: 3px 20px 20px;
+                    font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
+                }
+            }
+        }
+    }
+
+    .fill-height {
+        padding: 0px 25px;
+    }
+
+    .scale-trans {
+        .button {
+            padding {
+                padding: 18px 50px;
+            }
+        }
+    }
+}
+
+
 @media (min-width:480px) and (max-width:767px) {}
 
 // TABLET VIEW

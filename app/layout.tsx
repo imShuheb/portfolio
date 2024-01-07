@@ -1,5 +1,6 @@
 import { Montserrat } from 'next/font/google'
 import '../styles/style.scss'
+import '../styles/media.scss'
 import "bootstrap/dist/css/bootstrap.css";
 
 const montserrat = Montserrat({
