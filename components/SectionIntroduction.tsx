@@ -16,7 +16,8 @@ function SectionIntroduction() {
             </div>
 
             <div className="description fade-in">
-                <p>I'm a passionate web developer dedicated to crafting unique, user-centric digital experiences. Proficient in a range of technologies, I specialize in <span className='green'> front-end development, JavaScript frameworks, responsive design,</span> and more.</p>
+                <p>"I specialize in crafting user-centric digital experiences, proficient in front-end development, <span className='green'>JavaScript frameworks</span>, and <span className='green'>responsive design</span>. My expertise extends to <span className='green'>backend development</span> and <span className='green'>DevOps</span>, ensuring comprehensive solutions from deployment to maintenance."
+                </p>
             </div>
 
         </section>

@@ -4,7 +4,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaFacebook, FaTwitter } from "react-
 
 function Left() {
   return (
-    <div className='left d-none d-sm-block'>
+    <div className='left d-none d-lg-block fade-in'>
       <ul>
         <li> <Link href={'/'}> <FaGithub size={20} /></Link></li>
         <li> <Link href={'/'}> <FaInstagram size={20} /></Link></li>

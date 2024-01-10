@@ -7,10 +7,14 @@ import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 
 const Navbar: React.FC = () => {
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisible] = useState(true);
+    const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+    const [visible, setVisible] = useState<boolean>(true);
+    const [sideNav, setSideNav] = useState<boolean>(false);
 
-    const [sideNav, setSideNav] = useState(false)
+    function onclick() {
+        setSideNav(false)
+    }
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -58,13 +62,13 @@ const Navbar: React.FC = () => {
             {/* Mobile View */}
             <nav className={`navbar sticky-top d-block d-sm-none`}>
                 <div className="d-flex justify-content-between w-100 px-1 py-0">
-                    <div className="logo"><PiSlackLogo size={40} color={'#FFDB58'} /></div>
+                    <div className="logo"><PiSlackLogo size={30} color={'#FFDB58'} /></div>
 
                     <button className="clearbtn" onClick={() => setSideNav(!sideNav)}>
                         {!sideNav ?
-                            <FiMenu size={30} />
+                            <FiMenu size={20} />
                             :
-                            <IoClose size={30} />
+                            <IoClose size={20} />
                         }
                     </button>
                 </div>
@@ -75,17 +79,17 @@ const Navbar: React.FC = () => {
                     <div className="list ">
 
                         <ol className='d-flex flex-column'>
-                            <li className='nav-items'>
-                                <Link href={'#about'}>About</Link>
+                            <li className='nav-items '>
+                                <Link href={'#about'} onClick={() => onclick()}>About</Link>
                             </li>
-                            <li className='nav-items'>
-                                <Link href={'#about'}>Expirences</Link>
+                            <li className='nav-items '>
+                                <Link href={'#about'} onClick={() => onclick()}>Expirences</Link>
                             </li>
-                            <li className='nav-items'>
-                                <Link href={'#about'}>Work</Link>
+                            <li className='nav-items '>
+                                <Link href={'#about'} onClick={() => onclick()}>Work</Link>
                             </li>
-                            <li className='nav-items'>
-                                <Link href={'#about'}>Contact</Link>
+                            <li className='nav-items '>
+                                <Link href={'#about'} onClick={() => onclick()}>Contact</Link>
                             </li>
                         </ol>
 
