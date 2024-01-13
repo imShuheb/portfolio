@@ -16,10 +16,10 @@ function SectionAbout() {
                         I embarked on my coding journey during high school, and ever since, it has been a passion that fuels my every day. The world of development, the art of writing logic, and the intricacies of problem-solving have <span className='green'>captivated me fully</span>.
                     </p>
                     <p>
-                        I find profound joy in crafting solutions and bringing ideas to life through code. Whether it's creating <span className='green'>seamless user experiences</span> or architecting <span className='green'>robust backend systems</span>, I immerse myself in every aspect of development, consistently seeking to <span className='green'>learn and grow</span>.
+                        I find profound joy in crafting solutions and bringing ideas to life through code. Whether it&apos;s creating <span className='green'>seamless user experiences</span> or architecting <span className='green'>robust backend systems</span>, I immerse myself in every aspect of development, consistently seeking to <span className='green'>learn and grow</span>.
                     </p>
                     <p>
-                        My commitment to this field extends beyond just writing code; it's about building meaningful connections between technology and people. This dedication drives me to create applications that not only <span className='green'>function flawlessly</span> but also resonate with users on a <span className='green'>deeper level</span>.
+                        My commitment to this field extends beyond just writing code; it&apos;s about building meaningful connections between technology and people. This dedication drives me to create applications that not only <span className='green'>function flawlessly</span> but also resonate with users on a <span className='green'>deeper level</span>.
                     </p>
 
                     {/* <p>

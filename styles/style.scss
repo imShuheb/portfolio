@@ -624,3 +624,13 @@ main {
     }
   }
 }
+
+.section-built {
+  max-width: 900px;
+
+  .numbered-heading {
+    &::before {
+      counter-increment: section 3;
+    }
+  }
+}
