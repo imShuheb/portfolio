@@ -7,7 +7,7 @@ function SectionExpirence() {
     return (
         <section className='section-expirence' id='jobs'>
             <div className="numbered-heading d-flex align-items-center fade-in">
-                <h2>Where I've Worked</h2>
+                <h2>Where I&apos;ve Worked</h2>
             </div>
 
             <div className="inner-tabs d-flex">

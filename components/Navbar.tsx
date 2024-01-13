@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         setPrevScrollPos(window.pageYOffset);
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [prevScrollPos, visible]);
+    }, [prevScrollPos, visible, handleScroll]);
 
     const navItems = [
         { id: 'about', label: 'About' },
