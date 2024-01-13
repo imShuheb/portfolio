@@ -30,7 +30,9 @@ function SectionExpirence() {
                             Oct 2022 - Present
                         </p>
                         <ul>
-                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet repudiandae eaque dolorum possimus facilis dolor quam accusantium mollitia necessitatibus ducimus! Facilis beatae eum tenetur quaerat perspiciatis quam eligendi illum labore?</li>
+                            <li>Deliver high-quality, robust production code for a diverse array of projects for clients like Skilldots, VLSI First and more</li>
+                            <li>Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients</li>
+                            <li>Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship</li>
                         </ul>
                     </div>
                 </div>
