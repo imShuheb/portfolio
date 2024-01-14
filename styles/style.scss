@@ -2,14 +2,16 @@ $color_1: var(--lightest-slate);
 $font-family_1: var(--font-mono);
 $background-color_1: var(--navy);
 
-$yellow: #FFDB58;
+$blue: #00f6fb;
+// $yellow: #FFDB58;
 $darkSlate: #495670;
 $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 // Mixins
 @mixin hoverEffect {
   &:hover {
-    color: $yellow;
+    transform: translateY(-5px);
+    color: $blue;
   }
 }
 
@@ -57,7 +59,7 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 
   .green {
-    color: $yellow;
+    color: $blue;
   }
 
   a {
@@ -81,6 +83,12 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
 
+.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+  overflow: hidden !important;
+}
+
 .underline-on-hover {
   position: relative;
   text-decoration: none;
@@ -93,7 +101,7 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   left: 0;
   width: 0;
   height: 2px;
-  background-color: $yellow;
+  background-color: $blue;
   transition: width 0.3s ease-in-out;
 }
 
@@ -112,15 +120,24 @@ section {
   border: none;
   outline: none;
   background-color: inherit;
-  color: $yellow;
+  color: $blue;
 }
+
+.rotate-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate-icon.rotate180 {
+  transform: rotate(180deg);
+}
+
 
 .scale-trans {
 
   .button {
-    color: $yellow;
+    color: $blue;
     background-color: transparent;
-    border: 1px solid $yellow;
+    border: 1px solid $blue;
     border-radius: var(--border-radius);
     padding: 0.75rem 1rem;
     line-height: 1;
@@ -131,7 +148,7 @@ section {
 
     &:hover {
       transform: translateY(-2px);
-      box-shadow: $yellow 3px 3px 0px;
+      box-shadow: $blue 3px 3px 0px;
     }
   }
 }
@@ -172,6 +189,7 @@ section {
     &.open {
       transform: translateX(0);
       visibility: visible;
+      filter: none;
     }
   }
 
@@ -200,7 +218,7 @@ section {
 
 
           &:hover {
-            color: $yellow;
+            color: $blue;
           }
         }
 
@@ -208,7 +226,7 @@ section {
           counter-increment: item;
           content: "0" counter(item) ".";
           margin-right: 5px;
-          color: $yellow;
+          color: $blue;
           font-size: var(--fz-xxs);
           text-align: right;
         }
@@ -234,6 +252,8 @@ section {
 
 // Left Tagline
 
+
+
 .left {
   width: 40px;
   position: fixed;
@@ -253,12 +273,13 @@ section {
     list-style: none;
 
     li {
-
       a {
         padding: 12px;
         text-decoration: none;
+        transition: transform 0.3s ease, color 0.5s ease;
 
         @include hoverEffect;
+
       }
 
       &:last-of-type {
@@ -300,6 +321,7 @@ section {
       letter-spacing: 0.1em;
       -webkit-writing-mode: vertical-rl;
       writing-mode: vertical-rl;
+      transition: transform 0.3s ease, color 0.2s ease;
 
       @include hoverEffect;
     }
@@ -342,7 +364,7 @@ main {
 
     h1 {
       margin: 0px 0px 30px 4px;
-      color: $yellow;
+      color: $blue;
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
       font-weight: 400;
@@ -398,7 +420,7 @@ main {
       counter-increment: section 1;
       content: "0" counter(section) ".";
       margin-right: 10px;
-      color: $yellow;
+      color: $blue;
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
@@ -419,11 +441,13 @@ main {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transform: translateY(80px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .fade-in-active {
   opacity: 1;
+  transform: translateY(0);
 }
 
 
@@ -459,7 +483,7 @@ main {
             content: "▹";
             position: absolute;
             left: 0px;
-            color: $yellow;
+            color: $blue;
             font-size: var(--fz-sm);
             line-height: 12px;
           }
@@ -479,7 +503,7 @@ main {
       position: relative;
       width: 100%;
       border-radius: var(--border-radius);
-      background-color: $yellow;
+      background-color: $blue;
 
       &::before {
         top: 0px;
@@ -503,7 +527,7 @@ main {
         height: 100%;
         border-radius: var(--border-radius);
         transition: var(--transition);
-        border: 2px solid $yellow;
+        border: 2px solid $blue;
         top: 14px;
         left: 14px;
         z-index: -1;
@@ -563,12 +587,15 @@ main {
         text-align: left;
         white-space: nowrap;
 
-        @include hoverEffect;
+        &:hover {
+          background-color: var(--dark-navy);
+          color: $blue;
+        }
       }
 
       .active {
-        border-left: 2px solid $yellow;
-        color: $yellow;
+        border-left: 2px solid $blue;
+        color: $blue;
       }
 
     }
@@ -613,7 +640,7 @@ main {
             content: "▹";
             position: absolute;
             left: 0px;
-            color: $yellow;
+            color: $blue;
           }
         }
       }

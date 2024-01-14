@@ -8,6 +8,7 @@ const Navbar: React.FC = () => {
     const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
     const [visible, setVisible] = useState<boolean>(true);
     const [sideNav, setSideNav] = useState<boolean>(false);
+    const [iconRotation, setIconRotation] = useState(0);
 
     const handleScroll = () => {
         const currentScrollPos = window.pageYOffset;
@@ -25,6 +26,13 @@ const Navbar: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [prevScrollPos, visible, handleScroll]);
 
+    useEffect(() => {
+        const content = document.getElementById('content');
+        content?.classList.toggle('blur', sideNav)
+        document.body.classList.toggle('overflow-hidden', sideNav)
+    }, [sideNav]);
+
+
     const navItems = [
         { id: 'about', label: 'About' },
         { id: 'jobs', label: 'Experiences' },
@@ -37,7 +45,7 @@ const Navbar: React.FC = () => {
             <nav className="navbar sticky-top d-none d-sm-block">
                 <div className="d-flex justify-content-between w-100">
                     <div className="logo fade-in">
-                        <PiSlackLogo size={40} color={'#FFDB58'} />
+                        <PiSlackLogo size={40} color={'#00f6fb'} />
                     </div>
                     <div className="list d-flex align-items-center">
                         <ol>
@@ -60,11 +68,24 @@ const Navbar: React.FC = () => {
             <nav className="navbar sticky-top d-block d-sm-none">
                 <div className="d-flex justify-content-between w-100 px-1 py-0">
                     <div className="logo">
-                        <PiSlackLogo size={30} color={'#FFDB58'} />
+                        <PiSlackLogo size={30} color={'#00f6fb'} />
                     </div>
-                    <button className="clearbtn" onClick={() => setSideNav(!sideNav)}>
-                        {sideNav ? <IoClose size={20} /> : <FiMenu size={20} />}
+                    <button
+                        className={`clearbtn ${sideNav ? 'rotate-icon rotate180' : 'rotate-icon'}`}
+                        onClick={() => {
+                            setSideNav(!sideNav);
+                        }}
+                    >
+                        {sideNav ? (
+                            <span className='px-2'>
+                                <IoClose size={23} />
+                            </span>
+                        ) : (
+                            <FiMenu size={20} />
+                        )}
                     </button>
+
+
                 </div>
             </nav>
 
