@@ -1,19 +1,21 @@
 import Link from 'next/link';
-import React from 'react'
-import { FaGithub, FaInstagram, FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
+import React from 'react';
+import socialMediaData from '../others/SocialMedia';
 
 function Left() {
   return (
     <div className='left d-none d-lg-block fade-in'>
       <ul>
-        <li> <Link href={'/'}> <FaGithub size={20} /></Link></li>
-        <li> <Link href={'/'}> <FaInstagram size={20} /></Link></li>
-        <li> <Link href={'/'}> <FaLinkedin size={20} /></Link></li>
-        <li> <Link href={'/'}> <FaFacebook size={20} /></Link></li>
-        <li> <Link href={'/'}> <FaTwitter size={20} /></Link></li>
+        {socialMediaData.map((socialMedia, index) => (
+          <li key={index}>
+            <Link href={socialMedia.link} target='_blank'>
+              {React.createElement(socialMedia.icon, { size: 20 })}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
-  )
+  );
 }
 
-export default Left
+export default Left;
