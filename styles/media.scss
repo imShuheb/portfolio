@@ -25,7 +25,7 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 
     .hero-section {
-        height: auto !important;
+        height: 80vh !important;
         padding-top: var(--nav-height) !important;
     }
 
@@ -116,6 +116,18 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
             margin-left: 0px !important;
         }
     }
+
+    .section-contact {
+        margin: 0px auto 50px;
+    }
+
+    footer {
+        .icons-list {
+            display: block;
+        }
+    }
+
+
 }
 
 
@@ -128,7 +140,11 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 @media only screen and (min-width: 992px) and (max-width: 1400px) {}
 
 // LARGE SCREENS
-@media only screen and (min-width: 1400px) {}
+@media only screen and (max-width: 1080px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
 
 
 

@@ -10,22 +10,18 @@ function SectionAbout() {
                 <h2>About me</h2>
             </div>
 
-            <div className="inner fade-in">
+            <div className="inner">
                 <div className='inner-data'>
-                    <p>
+                    <p className='fade-in'>
                         I embarked on my coding journey during high school, and ever since, it has been a passion that fuels my every day. The world of development, the art of writing logic, and the intricacies of problem-solving have <span className='green'>captivated me fully</span>.
                     </p>
-                    <p>
+                    <p className='fade-in'>
                         I find profound joy in crafting solutions and bringing ideas to life through code. Whether it&apos;s creating <span className='green'>seamless user experiences</span> or architecting <span className='green'>robust backend systems</span>, I immerse myself in every aspect of development, consistently seeking to <span className='green'>learn and grow</span>.
                     </p>
-                    <p>
+                    <p className='fade-in'>
                         My commitment to this field extends beyond just writing code; it&apos;s about building meaningful connections between technology and people. This dedication drives me to create applications that not only <span className='green'>function flawlessly</span> but also resonate with users on a <span className='green'>deeper level</span>.
                     </p>
-
-                    {/* <p>
-                        Outside of coding, you might find me exploring new technologies, contributing to open-source projects, or simply enjoying a good book while sipping on a cup of coffee.
-                    </p> */}
-                    <ul>
+                    <ul className='fade-in'>
                         <li>Javascript</li>
                         <li>TypeScript</li>
                         <li>React</li>
@@ -41,7 +37,8 @@ function SectionAbout() {
 
                 <div className="image-container fade-in">
                     <div className="image-wrapper">
-                        <Image src={photo} alt="" width={280} height={280} layout="fixed" />
+                        <Image src={photo} alt="" width={280} height={280} layout="responsive"
+                            loading="lazy" />
                         <div className="hover-line"></div>
                     </div>
                 </div>
