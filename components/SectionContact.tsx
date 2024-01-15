@@ -11,7 +11,7 @@ function SectionContact() {
 
             <h2 className='title'>Get In Touch</h2>
 
-            <p>Open for conversation! Feel free to reach out for inquiries, collaborations, or just a friendly chat. I'm here and ready to connect.</p>
+            <p>Open for conversation! Feel free to reach out for inquiries, collaborations, or just a friendly chat. I&apos;m here and ready to connect.</p>
 
             <div className="d-flex justify-content-center scale-trans mt-5">
                 <Link href={'mailto:mshuheb8@gmail.com'} className="button p-4 px-5">
