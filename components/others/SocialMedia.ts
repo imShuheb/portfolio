@@ -7,10 +7,10 @@ interface SocialMedia {
 
 const socialMediaData: SocialMedia[] = [
   { icon: FaGithub, link: 'https://github.com/imShuheb' },
-  { icon: FaInstagram, link: '/instagram' },
+  { icon: FaInstagram, link: 'https://www.instagram.com/s_h_u_h_e_.b/' },
   { icon: FaLinkedin, link: 'https://www.linkedin.com/in/moahmmed-shuheb-86abaa1a0' },
-  { icon: FaFacebook, link: '/facebook' },
-  { icon: FaTwitter, link: '/twitter' },
+  // { icon: FaFacebook, link: '/facebook' },
+  { icon: FaTwitter, link: 'https://twitter.com/M_shuheb' },
 ];
 
 export default socialMediaData;

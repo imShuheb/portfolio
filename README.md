@@ -22,6 +22,7 @@ If you want to run this project locally, follow these steps:
    ```bash
    git clone https://github.com/imShuheb/portfolio
 
+
 2. cd portfolio
 3. npm install
 4. npm run dev

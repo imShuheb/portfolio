@@ -18,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head><title>Mohammed Shuheb</title></head>
       <body className={montserrat.className} style={{ background: '#0a192f' }}>{children}</body>
     </html>
   )

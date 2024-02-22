@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 function Footer() {
 
-
     return (
         <footer>
             <div className="icons-list ">
@@ -20,7 +19,7 @@ function Footer() {
             </div>
             <div className="desc">
                 <Link href={'https://github.com/imShuheb'}>
-                    <div>Desing & build by Mohammed Shuheb</div>
+                    <div>Desing & build by<span className='green    '> Mohammed Shuheb</span></div>
                 </Link>
             </div>
         </footer>

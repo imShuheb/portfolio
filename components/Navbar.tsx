@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { PiSlackLogo } from 'react-icons/pi';
 import { FiMenu } from 'react-icons/fi';
 import { IoClose } from 'react-icons/io5';
+import Image from 'next/image';
+import Logo from '../public/letter.svg'
 
 const Navbar: React.FC = () => {
     const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
@@ -45,7 +47,8 @@ const Navbar: React.FC = () => {
             <nav className="navbar sticky-top d-none d-sm-block">
                 <div className="d-flex justify-content-between w-100">
                     <div className="logo fade-in">
-                        <PiSlackLogo size={40} color={'#00f6fb'} />
+                        {/* <PiSlackLogo size={40} color={'#00f6fb'} /> */}
+                        <Image src={Logo} height={40} width={40} unoptimized alt='logo' />
                     </div>
                     <div className="list d-flex align-items-center">
                         <ol>

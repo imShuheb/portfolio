@@ -29,8 +29,8 @@ function SectionAbout() {
                         <li>NextAuth</li>
                         <li>Express.js</li>
                         <li>Node.js</li>
-                        <li>AWS (EC2, Amplify)</li>
-                        <li>Security (WAF)</li>
+                        <li>AWS</li>
+                        <li>Docker</li>
                         <li>CDN (Cloudflare)</li>
                     </ul>
                 </div>
