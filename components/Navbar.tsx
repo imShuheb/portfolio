@@ -59,9 +59,9 @@ const Navbar: React.FC = () => {
                             ))}
                         </ol>
                         <div className="scale-trans fade-in">
-                            <Link href={'/'} className="button">
+                            <a href='MohammedShuheb.pdf' className="button" target='_blank'>
                                 Resume
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -107,9 +107,9 @@ const Navbar: React.FC = () => {
                         </ol>
                         <div className="d-flex justify-content-center w-100 m-3">
                             <div className="scale-trans fade-in">
-                                <Link href={'/'} className="button m-0 px-5 py-3">
+                                <a href='MohammedShuheb.pdf' className="button" target='_blank'>
                                     Resume
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
