@@ -22,16 +22,16 @@ function SectionAbout() {
                         My commitment to this field extends beyond just writing code; it&apos;s about building meaningful connections between technology and people. This dedication drives me to create applications that not only <span className='green'>function flawlessly</span> but also resonate with users on a <span className='green'>deeper level</span>.
                     </p>
                     <ul className='fade-in'>
-                        <li>Javascript</li>
-                        <li>TypeScript</li>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>NextAuth</li>
-                        <li>Express.js</li>
-                        <li>Node.js</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Python (Programing Language)</li>
+                        <li>Java</li>
+                        <li>Typescript</li>
+                        <li>NodeJs</li>
+                        <li>NextJs</li>
+                        <li>ExpressJs</li>
+                        <li>MongoDB</li>
+                        <li>SQL</li>
                         <li>AWS</li>
-                        <li>Docker</li>
-                        <li>CDN (Cloudflare)</li>
                     </ul>
                 </div>
 

@@ -28,9 +28,11 @@ function SectionBuilt() {
                                 <div className="project-top">
                                     <div className="folder"><CiFolderOn size={50} /></div>
                                     <div className="project-link">
-                                        <Link href={project.githubLink} target='_blank' rel="noopener noreferrer">
-                                            <FiGithub size={20} />
-                                        </Link>
+                                        {project.githubLink &&
+                                            <Link href={project.githubLink} target='_blank' rel="noopener noreferrer">
+                                                <FiGithub size={20} />
+                                            </Link>
+                                        }
                                         <Link href={project.externalLink} target='_blank' rel="noopener noreferrer">
                                             <BiLinkExternal size={20} />
                                         </Link>

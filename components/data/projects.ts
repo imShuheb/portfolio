@@ -6,6 +6,20 @@ export const projectData = [
         githubLink: 'https://github.com/imShuheb/portfolio',
         externalLink: 'https://imshuheb.github.io/portfolio/',
     },
+    {
+        title: 'LearnNThrive',
+        description: 'Developed and managed a learning and course selling platform',
+        technologies: ['Next.js', 'Javascript', 'Bootstrap'],
+        githubLink: '',
+        externalLink: 'https://learnnthrive.com/',
+    },
+    {
+        title: 'SkillDots',
+        description: 'Developed a customized web application tailored to the needs of the institution, enhancing their operations and supporting specific functionalities',
+        technologies: ['Next.js', 'Javascript', 'Bootstrap'],
+        githubLink: '',
+        externalLink: 'https://learnnthrive.com/',
+    },
 ];
 
 export type Project = {
