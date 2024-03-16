@@ -22,9 +22,11 @@ function SectionExpirence() {
     };
 
     const renderTabContent = () => {
-        const experience = experiences[activeTab];
-        return (
-            <div className={`content ${activeTab === 0 ? 'd-block' : 'd-none'}`} key={activeTab}>
+        return experiences.map((experience, index) => (
+            <div
+                key={index}
+                className={`content ${activeTab === index ? 'd-block' : 'd-none'}`}
+            >
                 <p className='tab-heading'>
                     {experience.position}{' '}
                     <span className='green'>
@@ -41,8 +43,9 @@ function SectionExpirence() {
                     ))}
                 </ul>
             </div>
-        );
+        ));
     };
+
 
     return (
         <section className='section-expirence' id='jobs'>
@@ -51,8 +54,8 @@ function SectionExpirence() {
             </div>
 
             <div className="inner-tabs d-flex">
-                <div className="container-fulid">
-                    <div className="tab fade-in">
+                <div className="container-fulid overflow-x-scroll overflow-y-hidden col-sm-12 col-md-4">
+                    <div className="tab">
                         {renderTabButtons()}
                     </div>
                 </div>

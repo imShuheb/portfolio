@@ -18,7 +18,7 @@ export const projectData = [
         description: 'Developed a customized web application tailored to the needs of the institution, enhancing their operations and supporting specific functionalities',
         technologies: ['Next.js', 'Javascript', 'Bootstrap'],
         githubLink: '',
-        externalLink: 'https://learnnthrive.com/',
+        externalLink: 'https://skilldots.skilldeck.net/',
     },
 ];
 
